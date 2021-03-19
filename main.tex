@@ -1,0 +1,114 @@
+\documentclass{resume}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}  %蓝色
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}	
+\usepackage{amsmath, bm}
+
+\newcommand{\myThemeColor}{OliveGreen}
+\newcommand{\beforetitleColor}{lightgray}
+\newcommand{\CVtitle}[2]
+{\normalsize \textbf{\color{\beforetitleColor} #1} \textbf{\color{\myThemeColor} #2} \vspace{0.2cm} \color{\beforetitleColor}\hrule \color{black} }
+
+\newcommand{\CVitem}[2]
+{ \vspace{0.2cm}  \footnotesize \textbf{#1} \par\vspace{0.1cm} \footnotesize #2 \vspace{0.2cm} }
+\newcommand{\CVitemenglish}[2]
+{ \vspace{0.2cm}  \footnotesize\boldsymbol{#1} \par\vspace{0.1cm} \footnotesize#2 \vspace{0.2cm} }
+\newcommand{\Educationitem}[5]
+{	
+	\begin{tabularx}{\linewidth}{@{}m{0.25\linewidth}XX}\footnotesize
+		\bf{\color{\myThemeColor}#1} &\footnotesize \textbf{#2} &\footnotesize #3 \\
+		 \qquad  &\footnotesize #4 &\footnotesize #5	 	
+	\end{tabularx}
+}
+\newcommand{\projectitem}[7]{
+	\begin{tabularx}{\linewidth}{@{}m{0.25\linewidth} @{}m{0.55\linewidth} @{}m{0.2\linewidth} }\footnotesize		
+		\bf{\color{\myThemeColor}#1}    & \footnotesize \textbf{#2}    & \footnotesize \textbf{#3}     	
+	\end{tabularx}
+	\begin{tabularx}{\linewidth}{@{}m{0.22\linewidth} X}\footnotesize
+		\textbf{#4}  & \footnotesize#5 \\
+		\footnotesize\textbf{#6}  & \footnotesize#7
+	\end{tabularx}
+	
+}
+\newcommand{\paperitem}[6]{
+			\begin{tabularx}{\linewidth}{@{}m{0.22\linewidth} X}\footnotesize
+				
+				\bf{\color{\myThemeColor}#1}    & \footnotesize \bf{#2}   \\
+				\footnotesize \textbf{#3} & \footnotesize #4 \\
+				\footnotesize \textbf{#5} & \footnotesize #6 	
+			\end{tabularx}
+		
+}
+\begin{document}
+	
+	\fontfamily{ppl}\selectfont
+	
+	\noindent	
+	\begin{tabularx}{\linewidth}{X}
+		\LARGE{\textbf{\color{\myThemeColor}X　X}} \Large{\textbf{\color{\beforetitleColor} XX}}  		
+	\end{tabularx}
+	%\vspace{-1cm}
+	\color{\beforetitleColor}\rule{\textwidth}{0.1mm}
+	%\vspace{0.5cm}
+	\begin{center}
+		\begin{tabularx}{\linewidth}{@{}m{0.25\textwidth} m{0.72\textwidth}@{}}
+			
+			{	
+				\vspace{-0.5cm}	
+				\centering\includegraphics[width=3cm]{cauldron.png}	\\		
+				\raggedleft
+				\vspace{0.5cm}
+				\CVtitle{//}{个人信息} \\
+				\vspace{0.1cm}
+				\CVitem{姓名}{XX} \\
+				\CVitem{出生年月}{XXXX.XX} \\
+				\CVitem{籍贯}{XXXXXX} \\
+				\CVitem{电话}{XXXXXX} \\
+				\CVitemenglish{Email}{\href{XX@XX}{XX@XX}  }\\
+				\CVitemenglish{GitHub}{\href{XXX}{XXX}  }\\
+				
+				\vspace{0.3cm}
+				\CVtitle{//}{所获荣誉} \\
+				
+				\begin{itemize}
+					\footnotesize
+					\item XXXXXXXXXXXXXXX；
+					\item XXXXXXXXXXXX；
+					\item XXXXXXXXXXXX；
+					\item XXXXXX；
+					\item XXXXXXXXXX；
+				\end{itemize}
+				
+				
+			} &
+			{
+				\raggedright
+				
+				\CVtitle{//}{教育经历 } \\
+					\Educationitem{2019.09 - 至今}{XX大学}{ＸＸ硕士}{ＸＸ}{XX排名：XX} 
+					\Educationitem{2015.09 - 2019.06}{XX大学}{ＸＸ学士}{ＸＸ}{XX排名：XX} 	
+				\vspace{0.1cm}			
+				\CVtitle{//}{科研经历 } \\
+					\projectitem{2021.01 - 至今}{ＸＸＸＸＸＸＸ}{个人科研项目}{项目介绍：}{ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ}{主要技术：}{ＸＸＸ，ＸＸ模型，ＸＸＸＸ}\\
+					\paperitem{2020.08 - 2021.01}{ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ}{论文介绍:}{ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ}{主要技术:}{ＸＸＸＸ，ＸＸＸＸ，ＸＸＸＸ}\\
+					\projectitem{2019.09 - 2020.06}{ＸＸＸＸＸＸＸ}{ＸＸＸ}{项目介绍：}{ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ}{主要技术: }{ＸＸＸＸ、ＸＸＸＸＸ}\\
+				\vspace{0.2cm}	
+				  \CVtitle{//}{项目经历 } \\
+					\projectitem{2018.02 - 2018.06}{ＸＸＸＸＸＸ}{个人项目}{项目介绍：}{ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ}{主要技术}{ＸＸＸ、ＸＸＸ、ＸＸＸＸ}\\
+					\projectitem{2016.11 - 2017.11}{ＸＸＸＸＸ}{项目负责人}{项目介绍：}{ＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸＸ}{主要技术：}{ＸＸＸＸ、ＸＸＸＸ}\\
+				\vspace{0.2cm}
+				\CVtitle{//}{专业技能 } \\
+				
+				\footnotesize
+				\begin{itemize}					
+					\item 熟悉Java和Python，了解C/C++；
+					\item 有前后端开发经验，有ＸＸＸＸＸＸＸＸＸＸ等基础，对ＸＸＸＸＸＸＸＸＸ等框架均有使用经验；
+					\item 熟悉常用的机器学习及深度学习算法，对主流框架(ＸＸＸＸＸＸＸＸ等)均有使用经验，并对ＸＸＸＸＸＸＸ有它一定的了解；
+					\item 熟悉常用数据库（ＸＸＸＸＸＸＸＸ等)以及Linux服务器基本配置；			
+				\end{itemize}
+			}
+		\end{tabularx}
+	\end{center}
+	
+\end{document}
